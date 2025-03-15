@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Free Demo Slots for Filipino Players</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #111827;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+    
+    /* Layout */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    
+    @media (min-width: 768px) {
+      .container {
+        padding: 2rem;
+      }
+    }
+    
+    /* Typography */
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    @media (min-width: 640px) {
+      h1 {
+        font-size: 2.25rem;
+      }
+    }
+    
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      color: #d1d5db;
+      margin-bottom: 2rem;
+    }
+    
+    /* Slots grid */
+    .slots-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    @media (min-width: 640px) {
+      .slots-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .slots-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    /* Slot card */
+    .slot-card {
+      background-color: #1f2937;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+    
+    .slot-card:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Slot image container */
+    .slot-image-container {
+      position: relative;
+    }
+    
+    .demo-badge {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      background-color: #2563eb;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      z-index: 10;
+    }
+    
+    .slot-image {
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+    }
+    
+    /* Slot info */
+    .slot-info {
+      padding: 1rem;
+    }
+    
+    .slot-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+    
+    .slot-provider {
+      color: #9ca3af;
+      font-size: 0.875rem;
+    }
+    
+    .slot-rtp {
+      color: #d1d5db;
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
+    
+    /* Button container */
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    /* Play buttons */
+    .play-button {
+      display: block;
+      width: 100%;
+      background-color: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 0.5rem 0;
+      border-radius: 0.375rem;
+      font-weight: 500;
+      transition: background-color 0.2s;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    
+    .play-button:hover {
+      background-color: #1d4ed8;
+    }
+    
+    .real-money-button {
+      display: block;
+      width: 100%;
+      background-color: #059669;
+      color: white;
+      text-align: center;
+      padding: 0.5rem 0;
+      border-radius: 0.375rem;
+      font-weight: 500;
+      transition: background-color 0.2s;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    
+    .real-money-button:hover {
+      background-color: #047857;
+    }
+    
+    /* Category heading */
+    .category-heading {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 2rem 0 1rem;
+      color: #f3f4f6;
+      border-bottom: 2px solid #374151;
+      padding-bottom: 0.5rem;
+    }
+    
+    /* Why play section */
+    .info-box {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background-color: #1f2937;
+      border-radius: 0.5rem;
+    }
+    
+    .info-list {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    
+    .info-list li {
+      color: #d1d5db;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* View more button */
+    .view-more {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 2rem auto;
+      background-color: #4b5563;
+      color: white;
+      text-align: center;
+      padding: 0.75rem 0;
+      border-radius: 0.375rem;
+      font-weight: 500;
+      transition: background-color 0.2s;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .view-more:hover {
+      background-color: #6b7280;
+    }
+    
+    /* Hidden content */
+    .hidden-content {
+      display: none;
+    }
+    
+    /* Modal */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s linear 0.25s, opacity 0.25s 0s;
+    }
+    
+    .modal.active {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0s;
+    }
+    
+    .modal-backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+    
+    .modal-content {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 1024px;
+      height: 80vh;
+      background-color: black;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    
+    .modal-close {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      z-index: 20;
+      background-color: #1f2937;
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      padding: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .modal-close:hover {
+      background-color: #374151;
+    }
+    
+    .modal-iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section id="popular-slots">
+      <h1 class="text-3xl sm:text-4xl font-bold mb-4">Most Popular Free Demo Slots in the Philippines 2025</h1>
+      <p class="text-gray-300 mb-8">
+        Try these popular slot games for free before playing with real money. Our free demo slots let you experience the excitement without registration or deposits. These are the most played slots by Filipino players:
+      </p>
+      
+      <h2 class="category-heading">Pragmatic Play Favorites</h2>
+      <div class="slots-grid">
+        <!-- Sweet Bonanza -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://www.pragmaticplay.com/wp-content/uploads/2019/06/SweetBonanza_thumb-1.jpg" alt="Sweet Bonanza Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Sweet Bonanza</h3>
+            <div class="slot-provider">Pragmatic Play</div>
+            <div class="slot-rtp">RTP: 96.51%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Sweet Bonanza" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20fruitswx&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Gates of Olympus -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://www.pragmaticplay.com/wp-content/uploads/2021/02/GatesofOlympus-thumb.jpg" alt="Gates of Olympus Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Gates of Olympus</h3>
+            <div class="slot-provider">Pragmatic Play</div>
+            <div class="slot-rtp">RTP: 96.50%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Gates of Olympus" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20olympgate&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Starlight Princess -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://www.pragmaticplay.com/wp-content/uploads/2021/08/StarlightPrincess-thumb.jpg" alt="Starlight Princess Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Starlight Princess</h3>
+            <div class="slot-provider">Pragmatic Play</div>
+            <div class="slot-rtp">RTP: 96.50%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Starlight Princess" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20starlight&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 5 Lions Megaways -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://www.pragmaticplay.com/wp-content/uploads/2021/03/5LionsMegaways-thumb.jpg" alt="5 Lions Megaways Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">5 Lions Megaways</h3>
+            <div class="slot-provider">Pragmatic Play</div>
+            <div class="slot-rtp">RTP: 96.50%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="5 Lions Megaways" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs5lions&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="category-heading">PG Soft Hits</h2>
+      <div class="slots-grid">
+        <!-- Mahjong Ways 2 -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://static.pgsoft-games.com/og/91.png" alt="Mahjong Ways 2 Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Mahjong Ways 2</h3>
+            <div class="slot-provider">PG Soft</div>
+            <div class="slot-rtp">RTP: 96.95%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Mahjong Ways 2" data-url="https://m.pgsoft-games.com/91/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&from=https://demoslot.com/&language=en-EN&__refer=m.pg-redirect.net&or=static.pgsoft-games.com">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Wild Bounty -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://static.pgsoft-games.com/og/135.png" alt="Wild Bounty Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Wild Bounty</h3>
+            <div class="slot-provider">PG Soft</div>
+            <div class="slot-rtp">RTP: 88.12%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Wild Bounty" data-url="https://m.pgsoft-games.com/135/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&from=https://demoslot.com/&language=en-EN&__refer=m.pg-redirect.net&or=static.pgsoft-games.com">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Lucky Neko -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://static.pgsoft-games.com/og/69.png" alt="Lucky Neko Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Lucky Neko</h3>
+            <div class="slot-provider">PG Soft</div>
+            <div class="slot-rtp">RTP: 96.74%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Lucky Neko" data-url="https://m.pgsoft-games.com/69/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&from=https://demoslot.com/&language=en-EN&__refer=m.pg-redirect.net&or=static.pgsoft-games.com">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fortune Tiger -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://static.pgsoft-games.com/og/98.png" alt="Fortune Tiger Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Fortune Tiger</h3>
+            <div class="slot-provider">PG Soft</div>
+            <div class="slot-rtp">RTP: 96.80%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Fortune Tiger" data-url="https://m.pgsoft-games.com/98/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&from=https://demoslot.com/&language=en-EN&__refer=m.pg-redirect.net&or=static.pgsoft-games.com">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="category-heading">Jili Games Collection</h2>
+      <div class="slots-grid">
+        <!-- Fortune Gems 2 -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://jili.games/wp-content/uploads/2023/03/Fortune-Gems-2.webp" alt="Fortune Gems 2 Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Fortune Gems 2</h3>
+            <div class="slot-provider">Jili Games</div>
+            <div class="slot-rtp">RTP: 97.00%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Fortune Gems 2" data-url="https://tadagaming.com/PlusTrial/223/en-us">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Lucky Fishing -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://jili.games/wp-content/uploads/2023/03/Lucky-Fishing.webp" alt="Lucky Fishing Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Lucky Fishing</h3>
+            <div class="slot-provider">Jili Games</div>
+            <div class="slot-rtp">RTP: 96.50%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Lucky Fishing" data-url="https://tadagaming.com/PlusTrial/201/en-us">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Money Coming -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://jili.games/wp-content/uploads/2023/03/Money-Coming.webp" alt="Money Coming Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Money Coming</h3>
+            <div class="slot-provider">Jili Games</div>
+            <div class="slot-rtp">RTP: 96.80%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Money Coming" data-url="https://tadagaming.com/PlusTrial/210/en-us">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Golden Empire -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://jili.games/wp-content/uploads/2023/03/Golden-Empire.webp" alt="Golden Empire Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Golden Empire</h3>
+            <div class="slot-provider">Jili Games</div>
+            <div class="slot-rtp">RTP: 96.90%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Golden Empire" data-url="https://tadagaming.com/PlusTrial/205/en-us">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="category-heading">More Filipino Favorites</h2>
+      <div class="slots-grid">
+        <!-- Buffalo King -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://www.pragmaticplay.com/wp-content/uploads/2019/12/BuffaloKing-thumb.jpg" alt="Buffalo King Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Buffalo King</h3>
+            <div class="slot-provider">Pragmatic Play</div>
+            <div class="slot-rtp">RTP: 96.06%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Buffalo King" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs4096bufking&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Aztec Gems -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://www.pragmaticplay.com/wp-content/uploads/2018/03/aztec_gems_thumb.jpg" alt="Aztec Gems Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Aztec Gems</h3>
+            <div class="slot-provider">Pragmatic Play</div>
+            <div class="slot-rtp">RTP: 96.52%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Aztec Gems" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs3aztec&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Dragon Hatch -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://static.pgsoft-games.com/og/74.png" alt="Dragon Hatch Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Dragon Hatch</h3>
+            <div class="slot-provider">PG Soft</div>
+            <div class="slot-rtp">RTP: 96.70%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Dragon Hatch" data-url="https://m.pgsoft-games.com/74/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&from=https://demoslot.com/&language=en-EN&__refer=m.pg-redirect.net&or=static.pgsoft-games.com">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Ganesha Fortune -->
+        <div class="slot-card">
+          <div class="slot-image-container">
+            <span class="demo-badge">FREE DEMO</span>
+            <img src="https://static.pgsoft-games.com/og/76.png" alt="Ganesha Fortune Slot" class="slot-image" loading="lazy">
+          </div>
+          <div class="slot-info">
+            <h3 class="slot-title">Ganesha Fortune</h3>
+            <div class="slot-provider">PG Soft</div>
+            <div class="slot-rtp">RTP: 96.85%</div>
+            <div class="button-container">
+              <button class="play-button" data-title="Ganesha Fortune" data-url="https://m.pgsoft-games.com/76/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&from=https://demoslot.com/&language=en-EN&__refer=m.pg-redirect.net&or=static.pgsoft-games.com">
+                Play Free Demo
+              </button>
+              <a href="#" class="real-money-button">
+                Play Real Money
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button id="loadMoreBtn" class="view-more">
+        Load More Slots
+      </button>
+      
+      <!-- Hidden content that will be shown when "Load More" is clicked -->
+      <div id="moreSlots" class="hidden-content">
+        <h2 class="category-heading">More Random Slot Games</h2>
+        <div class="slots-grid">
+          <!-- Wolf Gold -->
+          <div class="slot-card">
+            <div class="slot-image-container">
+              <span class="demo-badge">FREE DEMO</span>
+              <img src="https://www.pragmaticplay.com/wp-content/uploads/2018/05/WolfGold-thumb.jpg" alt="Wolf Gold Slot" class="slot-image" loading="lazy">
+            </div>
+            <div class="slot-info">
+              <h3 class="slot-title">Wolf Gold</h3>
+              <div class="slot-provider">Pragmatic Play</div>
+              <div class="slot-rtp">RTP: 96.01%</div>
+              <div class="button-container">
+                <button class="play-button" data-title="Wolf Gold" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25wolfgold&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                  Play Free Demo
+                </button>
+                <a href="#" class="real-money-button">
+                  Play Real Money
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Caishen's Cash -->
+          <div class="slot-card">
+            <div class="slot-image-container">
+              <span class="demo-badge">FREE DEMO</span>
+              <img src="https://www.pragmaticplay.com/wp-content/uploads/2019/01/CaishensCash-thumb.jpg" alt="Caishen's Cash Slot" class="slot-image" loading="lazy">
+            </div>
+            <div class="slot-info">
+              <h3 class="slot-title">Caishen's Cash</h3>
+              <div class="slot-provider">Pragmatic Play</div>
+              <div class="slot-rtp">RTP: 96.50%</div>
+              <div class="button-container">
+                <button class="play-button" data-title="Caishen's Cash" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs243caishien&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                  Play Free Demo
+                </button>
+                <a href="#" class="real-money-button">
+                  Play Real Money
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Leprechaun Riches -->
+          <div class="slot-card">
+            <div class="slot-image-container">
+              <span class="demo-badge">FREE DEMO</span>
+              <img src="https://static.pgsoft-games.com/og/56.png" alt="Leprechaun Riches Slot" class="slot-image" loading="lazy">
+            </div>
+            <div class="slot-info">
+              <h3 class="slot-title">Leprechaun Riches</h3>
+              <div class="slot-provider">PG Soft</div>
+              <div class="slot-rtp">RTP: 96.66%</div>
+              <div class="button-container">
+                <button class="play-button" data-title="Leprechaun Riches" data-url="https://m.pgsoft-games.com/56/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&from=https://demoslot.com/&language=en-EN&__refer=m.pg-redirect.net&or=static.pgsoft-games.com">
+                  Play Free Demo
+                </button>
+                <a href="#" class="real-money-button">
+                  Play Real Money
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Queen of Bounty -->
+          <div class="slot-card">
+            <div class="slot-image-container">
+              <span class="demo-badge">FREE DEMO</span>
+              <img src="https://static.pgsoft-games.com/og/136.png" alt="Queen of Bounty Slot" class="slot-image" loading="lazy">
+            </div>
+            <div class="slot-info">
+              <h3 class="slot-title">Queen of Bounty</h3>
+              <div class="slot-provider">PG Soft</div>
+              <div class="slot-rtp">RTP: 96.71%</div>
+              <div class="button-container">
+                <button class="play-button" data-title="Queen of Bounty" data-url="https://m.pgsoft-games.com/136/index.html?l=en&ot=ca7094186b309ee149c55c8822e7ecf2&btt=2&from=https://demoslot.com/&language=en-EN&__refer=m.pg-redirect.net&or=static.pgsoft-games.com">
+                  Play Free Demo
+                </button>
+                <a href="#" class="real-money-button">
+                  Play Real Money
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slots-grid">
+          <!-- Treasures of Aztec -->
+          <div class="slot-card">
+            <div class="slot-image-container">
+              <span class="demo-badge">FREE DEMO</span>
+              <img src="https://jili.games/wp-content/uploads/2023/03/Treasures-of-Aztec.webp" alt="Treasures of Aztec Slot" class="slot-image" loading="lazy">
+            </div>
+            <div class="slot-info">
+              <h3 class="slot-title">Treasures of Aztec</h3>
+              <div class="slot-provider">Jili Games</div>
+              <div class="slot-rtp">RTP: 96.85%</div>
+              <div class="button-container">
+                <button class="play-button" data-title="Treasures of Aztec" data-url="https://tadagaming.com/PlusTrial/215/en-us">
+                  Play Free Demo
+                </button>
+                <a href="#" class="real-money-button">
+                  Play Real Money
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Jungle Delight -->
+          <div class="slot-card">
+            <div class="slot-image-container">
+              <span class="demo-badge">FREE DEMO</span>
+              <img src="https://jili.games/wp-content/uploads/2023/03/Jungle-Delight.webp" alt="Jungle Delight Slot" class="slot-image" loading="lazy">
+            </div>
+            <div class="slot-info">
+              <h3 class="slot-title">Jungle Delight</h3>
+              <div class="slot-provider">Jili Games</div>
+              <div class="slot-rtp">RTP: 96.70%</div>
+              <div class="button-container">
+                <button class="play-button" data-title="Jungle Delight" data-url="https://tadagaming.com/PlusTrial/208/en-us">
+                  Play Free Demo
+                </button>
+                <a href="#" class="real-money-button">
+                  Play Real Money
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Great Blue -->
+          <div class="slot-card">
+            <div class="slot-image-container">
+              <span class="demo-badge">FREE DEMO</span>
+              <img src="https://www.playtech.com/sites/default/files/games/greatblue.jpg" alt="Great Blue Slot" class="slot-image" loading="lazy">
+            </div>
+            <div class="slot-info">
+              <h3 class="slot-title">Great Blue</h3>
+              <div class="slot-provider">Playtech</div>
+              <div class="slot-rtp">RTP: 96.03%</div>
+              <div class="button-container">
+                <button class="play-button" data-title="Great Blue" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs25gladiator&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                  Play Free Demo
+                </button>
+                <a href="#" class="real-money-button">
+                  Play Real Money
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sakura Fortune -->
+          <div class="slot-card">
+            <div class="slot-image-container">
+              <span class="demo-badge">FREE DEMO</span>
+              <img src="https://www.quickspin.com/wp-content/uploads/sites/2/2017/04/sakura-fortune-thumbnail.jpg" alt="Sakura Fortune Slot" class="slot-image" loading="lazy">
+            </div>
+            <div class="slot-info">
+              <h3 class="slot-title">Sakura Fortune</h3>
+              <div class="slot-provider">Quickspin</div>
+              <div class="slot-rtp">RTP: 96.58%</div>
+              <div class="button-container">
+                <button class="play-button" data-title="Sakura Fortune" data-url="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs40wildwest&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=EN&cur=PHP">
+                  Play Free Demo
+                </button>
+                <a href="#" class="real-money-button">
+                  Play Real Money
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="info-box">
+        <h2 class="text-xl font-bold mb-4">Why Filipino Players Love These Slots</h2>
+        <ul class="info-list">
+          <li>High RTP (Return to Player) percentages for better winning chances</li>
+          <li>Exciting bonus features and free spin rounds</li>
+          <li>Themes that resonate with Filipino culture and interests</li>
+          <li>Mobile-friendly gameplay for on-the-go entertainment</li>
+          <li>Wide betting ranges to accommodate all budgets</li>
+          <li>Stunning graphics and immersive sound effects</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal -->
+  <div id="gameModal" class="modal" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6L6 18"></path>
+          <path d="M6 6l12 12"></path>
+        </svg>
+      </button>
+      <iframe id="gameIframe" class="modal-iframe" allow="autoplay; fullscreen"></iframe>
+    </div>
+  </div>
+
+  <script>
+    // Modal functionality
+    const modal = document.getElementById('gameModal');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modalClose = document.getElementById('modalClose');
+    const gameIframe = document.getElementById('gameIframe');
+    const playButtons = document.querySelectorAll('.play-button');
+    
+    // Open modal when play button is clicked
+    playButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const gameTitle = button.getAttribute('data-title');
+        const gameUrl = button.getAttribute('data-url');
+        
+        gameIframe.src = gameUrl;
+        gameIframe.title = `${gameTitle} Demo`;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      });
+    });
+    
+    // Close modal when backdrop or close button is clicked
+    modalBackdrop.addEventListener('click', closeModal);
+    modalClose.addEventListener('click', closeModal);
+    
+    // Close modal when ESC key is pressed
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+    
+    function closeModal() {
+      modal.classList.remove('active');
+      document.body.style.overflow = ''; // Restore scrolling
+      
+      // Clear iframe src after a short delay to stop game sounds
+      setTimeout(() => {
+        gameIframe.src = '';
+      }, 300);
+    }
+    
+    // Load more slots functionality
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const moreSlots = document.getElementById('moreSlots');
+    
+    if (loadMoreBtn && moreSlots) {
+      loadMoreBtn.addEventListener('click', () => {
+        moreSlots.style.display = 'block';
+        loadMoreBtn.style.display = 'none';
+        
+        // Update play buttons to include the newly added ones
+        const allPlayButtons = document.querySelectorAll('.play-button');
+        allPlayButtons.forEach(button => {
+          if (!button.hasAttribute('data-initialized')) {
+            button.setAttribute('data-initialized', 'true');
+            button.addEventListener('click', () => {
+              const gameTitle = button.getAttribute('data-title');
+              const gameUrl = button.getAttribute('data-url');
+              
+              gameIframe.src = gameUrl;
+              gameIframe.title = `${gameTitle} Demo`;
+              modal.classList.add('active');
+              document.body.style.overflow = 'hidden';
+            });
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>
